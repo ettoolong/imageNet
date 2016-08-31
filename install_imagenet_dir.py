@@ -6,7 +6,7 @@ import tarfile
 
 def maybe_download_and_extract():
   """Download and extract model tar file."""
-  dest_directory = '/tmp/imagenet'
+  dest_directory = '/etc/imagenet'
   DATA_URL = 'http://download.tensorflow.org/models/image/imagenet/inception-2015-12-05.tgz'
   if not os.path.exists(dest_directory):
     os.makedirs(dest_directory)
